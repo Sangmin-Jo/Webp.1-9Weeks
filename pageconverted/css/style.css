@@ -58,3 +58,11 @@ h1,h2,h3,h4,h5,h6,p{/*background: lightblue;*/ text-align: center; color: white;
 .shellwrap{width: 74vw; margin: auto; display: flex; gap:0.8vw 0.8vw; flex-wrap: wrap; margin-top: 40px; }
 .shell {width: 4vw; height: 4vw; background: url(../img/logo-g.png); background-size: cover;}
 .shell:hover{background: url(../img/logo-b.png); background-size: cover; }
+
+.arrow { position: relative; }
+.arrow::after { position: absolute;
+    left: 2vw; top: 40px; content: '';
+    width: 32px; height: 32px;
+    border-top: 2px solid #AAB8BC; border-right: 2px solid #AAB8BC;
+    transform: rotate(45deg);
+	}
